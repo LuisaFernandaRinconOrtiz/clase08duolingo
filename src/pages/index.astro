@@ -3,69 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
 
-const flags =[
-	{
-		flag:'',
-	 name:'bandera 1'
-	},
-	{
-		flag:'',
-	 name:'bandera 2'
-	},
-	{
-		flag:'',
-	 name:'bandera 3'
-	},
-	{
-		flag:'',
-	 name:'bandera 4'
-	}
-]
-
 ---
 
-<Layout title="HOLA MUNDO.">
-	<div class="container">
-		<div class="banner">
-          banner
-		</div>
-		<div class="langs">
-			{
-				flags.map((flag) => <a href="#">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 4H6V2H4v18H3v2h4v-2H6v-5h13a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"></path></svg>
-				{flag.name}
-			</a>
-			)
-			} 
-
-		</div>
-
-	</div>
+<Layout title="DUOLINGO CLONE.">
+	 ESTE ES EL CONTENIDO 
 </Layout>
 
-<style>
-	.langs{
-		height: 46px;
-		display: flex;
 
-		& a {
-			transition: background 300ms  ease-in-out;
-			display: flex;
-			align-items: center;
-			padding: 0 8px;
-			color: aliceblue;
-			text-decoration: none;
-			height: 100%;
-			background: purple;
-
-		}
-
-		& a:hover {
-			background: green;
-
-		}
-	}
-	.banner {
-		height: 320px;
-	}
-</style>
